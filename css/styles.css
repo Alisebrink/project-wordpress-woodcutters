@@ -1,0 +1,855 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+    background:#F9F9F9;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-size: 14px;
+}
+
+h3 {
+    font-size:28px;
+    color:#3C8841;
+}
+
+h4, h5, h6 {
+    font-size: 18px;
+    color:#3C8841;
+}
+
+a {
+    color:white;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#3C8841;
+    transition-duration: 0.1s;
+}
+
+article>h3>a {
+    color:#3C8841;
+}
+
+article>h3>a:hover {
+    color:#56A45A;
+}
+
+.mainContent h2 a {
+    color:#3C8841;
+}
+
+.mainContent h2 a:hover {
+    color:#56A45A;
+}
+
+.preHeader a:hover {
+    color:#C6B8A8;
+    transition-duration: 0.1s;
+}
+
+.mainContainer {
+    width:992px;
+    margin:0 auto;
+    background:white;
+    top:-130px;
+    z-index: 1;
+    min-height: 100vh;
+}
+
+.background-behind-preheader, .background-behind-header {
+    z-index: -2;
+    position: absolute;
+    width:100%;
+    display:block;
+}
+
+.background-behind-preheader {
+    min-height: 30px;
+    background: #776959;
+}
+
+.background-behind-header {
+    background: #56A45A;
+    min-height: 150px;
+    margin-top:30px;
+}
+
+.preHeader {
+    background:#776959;
+    width:100%;
+    min-height:30px;
+    color:white;
+}
+
+.preHeader p {
+    float:right;
+    padding-right:10px;
+    padding-top: 5px;
+}
+
+.mainHeader {
+    background: #56A45A;
+    color:white;
+    padding:30px 40px 20px 40px;
+    height:150px;
+}
+
+nav {
+    display:flex;
+    margin-top:40px;
+}
+
+.mainHeader nav a {
+    width:30%;
+}
+
+.mainHeader nav ul {
+    width:70%;
+    text-align: right;
+    height:100%;
+    margin-bottom:0;
+    margin-top:0;
+    align-self: flex-end;
+}
+
+.mainHeader>nav>ul>li {
+    display: inline;
+    padding:2px 16px;
+}
+
+.myFooter {
+    background:#776959;
+    color:white;
+}
+
+.images {
+    width:100%;
+    z-index: 1;
+}
+
+.mainBanner {
+    overflow: hidden;
+    position:relative;
+    text-align: center;
+    color:white;
+}
+
+.desktop-img {
+    display:block;
+}
+
+.mobile-img {
+    display:none;
+}
+
+.headerLabel {
+    background:#C6B8A8;
+    padding:20px 40px;
+    width:50%;
+    top:30%;
+    left:25%;
+    margin:0 auto;
+    z-index: 2;
+    position:absolute;
+}
+
+.desktop-menu {
+    font-size: 18px;
+}
+
+
+/* Design for the news-side */
+.headerLabel-nyheter {
+    background:#3C8841;
+    padding:20px 40px;
+    width:30%;
+    top:60%;
+    left:35%;
+    margin:0 auto;
+    z-index: 2;
+    position:absolute;
+    clear: both;
+}
+
+.headerLabel-nyheter h2 {
+    font-size: 30px;
+}
+
+.news-main-container {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.news-content {
+    width:75%;
+    padding:20px;
+}
+
+aside {
+    min-height:100%;
+    width:25%;
+    padding:20px;
+    border-left: 1px lightgrey solid;
+}
+
+aside>ul>li>a {
+    color:black;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+aside>ul {
+    padding-left:20px;
+}
+
+
+.nyhet {
+    min-height: 400px;
+    margin-bottom: 20px;
+}
+
+.nyhet>h3>a {
+    color:#3C8841;
+}
+
+.nyhet>h3>a:hover {
+    color:#56A45A;
+}
+
+.nyhet h3  {
+    text-align: left;
+    font-size: 24px;
+}
+
+.date-for-posted-news {
+    color:#C6B8A8;
+    text-transform: uppercase;
+    margin-top:0px;
+}
+
+.headerLabel h2 {
+    font-size: 36px;
+}
+
+.headerLabel .divider {
+    height:1px;
+    background:white;
+    margin:0 auto;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.divider {
+    height:1px;
+    background:lightgrey;
+    width:80%;
+    margin:0 auto;
+    margin-bottom:30px;
+}
+
+.mainContent h2 {
+    color:#3C8841;
+    font-size: 36px;
+    text-align: center;
+    margin-top:10px;
+}
+
+.newsContent, .hp-more-info-bottom {
+    display:flex;
+}
+
+.newsContent article {
+    width:50%;
+    padding:30px;
+}
+
+
+.readMore {
+    color:#3C8841;
+    float:right;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.readMore:hover {
+    color:#56A45A;
+    cursor: pointer;
+}
+
+.hp-more-info-bottom {
+    padding:30px;
+}
+
+.hp-more-info-bottom-img1 {
+    width:60%;
+    padding-right:10px;
+    position: relative;
+}
+
+.hp-more-info-bottom-img2 {
+    width:40%;
+    position: relative;
+    z-index: 1;
+}
+
+.hp-more-info-bottom-img1>h4, .hp-more-info-bottom-img2>h4 {
+    z-index: 2;
+    position:absolute;
+    bottom:25px;
+    left:25px;
+    color:white;
+    font-size: 24px;
+}
+
+.myFooter {
+    min-height:130px;
+}
+
+.footerInfo {
+    display:flex;
+}
+
+.footerInfo div {
+    padding:15px;
+    width:20%;
+    margin:0 auto;
+    height:130px;
+    padding-top:50px;
+    text-align: center;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    background-color:#171717 ;
+    overflow-x: hidden;
+    transition: 0.4s;
+    margin-top:30px;
+  }
+
+  /* Contact us design */
+
+  .contact-information {
+      display:flex;
+      flex-wrap: wrap;
+      width:100%;
+      text-align: center;
+      padding:30px 120px;
+  }
+
+  .contact-information h3 {
+      width:100%;
+      padding-bottom:20px;
+      font-weight: 700;
+  }
+
+  .headerLabel-nyheter h2 {
+      font-weight: 700;
+  }
+
+  .contact-information div {
+      width:30%;
+      margin:0 auto;
+  }
+
+  .contact-form {
+      width:80%;
+      margin:0 auto;
+      margin-bottom: 40px;
+  }
+
+  .form-head {
+      background:#56A45A;
+      color:white;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 700;
+      padding:10px;
+  }
+
+  .form {
+      background:#ECECEC;
+      padding:30px 60px;
+      display:flex;
+      flex-wrap: wrap;
+      font-size:12px;
+  }
+
+  input[type=text] {
+      width:80%;
+      margin-bottom:10px;
+      margin-top:5px;
+      height:30px;
+  }
+
+  input[type=submit] {
+      float:right;
+      background:#EE9E00;
+      border:none;
+      border-radius: 10px;
+      padding:5px 16px;
+      color:white;
+      font-size:14px;
+      margin-top:20px;
+  }
+
+  input[type=submit]:hover {
+      background:#DE9300;
+      cursor: pointer;
+      transition: 0.2s;
+  }
+
+  textarea {width:100%;}
+
+
+  .form>.left-form {
+      width:50%;
+  }
+
+  .form>.right-form {
+    width:50%;
+}
+
+  /* about us design */
+  .about-us-portraits {
+      display:flex;
+      flex-wrap: wrap;
+      width:100%;
+      padding:40px 60px;
+  }
+
+  .about-us-portraits img {
+      margin-bottom: 10px;
+      width:150px;
+      margin:0 auto;
+  }
+
+  .about-us-portraits div {
+    margin:0 auto;
+    text-align: center;
+  }
+
+  .about-us-history {
+      padding:40px 150px;
+  }
+
+  .about-us-history h3 {
+      text-align: center;
+      font-size: 24px;
+      margin-top:20px;
+  }
+
+  .about-us-history p {
+      padding-top:10px;
+      padding-bottom:10px;
+  }
+
+  
+  /* Menu design */
+  .sidenav a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 25px !important;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #776959;
+    cursor: pointer;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    right: 10px;
+    font-size: 44px;
+  }
+
+
+  .mainHeader nav span {
+      float:right;
+  }
+
+  .hamburger-menu-icon {
+      display:none;
+  }
+
+  /* Slideshow for contact page */
+
+    .mySlides {display:none}
+    .w3-left, .w3-right, .w3-badge {cursor:pointer}
+    .w3-badge {height:13px;width:13px;padding:0}
+
+    .w3-content {
+        margin-bottom:40px;
+    }
+
+  @media screen and (max-width: 900px) {
+
+    .mainContent h2 {
+        font-size: 22px;
+    }
+
+    h3, h4, h5, h6 {
+        font-size: 16px;
+    }
+    .headerLabel h2 {
+        font-size: 22px;
+    }
+
+    .hamburger-menu-icon {
+        display:block;
+    }
+
+    .desktop-menu {
+        display:none;
+    }
+
+    nav a img {
+        height:50px;
+        width:auto;
+        margin:0 auto;
+    }
+
+    .mainHeader nav span {
+        float:right;
+    }
+
+    .mainHeader nav {
+        display:block;
+        padding:0;
+    }
+
+    .sidenav {padding-top: 15px;text-align: center;}
+    .sidenav a {font-size: 22px;margin:0 auto;}
+    .closebtn {font-size: 40px;}
+
+    .background-behind-preheader, .background-behind-header {
+        display:none;
+    }
+
+    .mainContainer {
+        width:100%;
+    }
+
+    .mainHeader {
+        height:100px;
+        padding:20px;     
+    }
+
+    .mainHeader nav {
+        margin-top:0px;
+    }
+
+    /* about us design */
+
+    .about-us-history {
+        padding:40px 10px;
+    }
+
+    .about-us-portraits {
+        padding-top:30px;
+    }
+
+    .about-us-history {
+        padding:10px;
+    }
+
+    /* design for news content */
+
+    .headerLabel-nyheter {
+        background:#3C8841;
+        padding:10px 20px;
+        top:60%;
+        left:20px;
+        right:20px;
+        margin:0 auto;
+        z-index: 2;
+        position:absolute;
+        clear: both;
+    }
+    
+    .headerLabel-nyheter h2 {
+        font-size: 22px;
+    }
+
+    /* contact page design */
+
+    .contact-information, .contact-form {
+        padding:10px;
+        width:100%;
+        margin-bottom:10px;
+    }
+
+    .w3-content {
+        padding:10px;
+    }
+
+
+  }
+
+@media screen and (max-width: 600px) {
+
+    p {
+        font-size: 12px;
+    }
+
+    .mainContent h2 {
+        font-size: 22px;
+    }
+
+    h3, h4, h5, h6 {
+        font-size: 16px;
+    }
+
+    .mainBanner {
+        overflow: hidden;
+        position:relative;
+        text-align: center;
+        color:white;
+    }
+
+    .desktop-img {
+        display:none;
+    }
+
+    .mobile-img {
+        display:block;
+    }
+    
+    .headerLabel {
+        background:#C6B8A8;
+        padding:10px 20px;
+        width:280px;
+        z-index:2;
+        top:130px;
+        left:30px;
+        right:30px;
+        position:absolute;
+    }
+
+    .headerLabel h2 {
+        font-size: 18px;
+    }
+
+    .readMore {
+        font-size: 14px;
+    }
+
+    .mainContainer {
+        width:100%;
+        min-width: 360px;
+    }
+
+    .mainContent {
+        padding-bottom:10px;
+        height:100%;
+    }
+    
+    .hp-more-info-bottom-img1, .hp-more-info-bottom-img2 {
+        width:100%;
+        padding: 10px 10px 0px 10px;
+    }
+
+    .newsContent article {
+        width:100%;
+        padding:10px;
+        margin:0;
+        overflow: hidden;
+    }
+
+    .footerInfo div:first-of-type {
+        display:none;
+    }
+
+    .footerInfo div:last-of-type {
+        display:none;
+    }
+
+    .footerInfo div {
+        width:100%;
+        padding:10px;
+        height:60px;
+    }
+
+    /* contact page design */
+
+    .form {
+        width:100%;
+        padding:10px;
+        overflow:hidden;
+        display:block;
+    }
+
+    .form>.left-form, .form>.right-form {
+        width:100%;
+    }
+
+    .contact-information {
+        display:block;
+        width:100%;
+    }
+
+    .contact-information div {
+        width:100%;
+    }
+    .contact-information h3 {
+        font-size: 24px;
+    }
+
+    input[type=text] {
+        width:100%;
+        margin-bottom:10px;
+        margin-top:5px;
+        height:30px;
+    }
+  
+    input[type=submit] {
+        float:right;
+        background:#EE9E00;
+        border:none;
+        border-radius: 10px;
+        padding:5px 16px;
+        color:white;
+        font-size:14px;
+        margin-top:20px;
+    }
+  
+    input[type=submit]:hover {
+        background:#DE9300;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    /* about us design */
+
+    .about-us-portraits div {
+        margin-bottom:10px;
+        width:100%;
+    }
+
+    .about-us-portraits div img {
+        width:60%;
+    }
+
+    .about-us-portraits {
+        width:100%;
+        padding:10px;
+    }
+
+    .form-head {
+        font-size: 16px;
+    }
+
+    /* news content design */
+    .headerLabel-nyheter {
+        background:#3C8841;
+        padding:10px 20px;
+        width:50%;
+        top:50%;
+        left:20px;
+        right:20px;
+        margin:0 auto;
+        z-index: 2;
+        position:absolute;
+        clear: both;
+    }
+
+    .news-main-container {
+        display:block;
+    }
+
+    .news-content {
+        width:100%;
+        text-align: center;
+        padding:10px;
+    }
+
+    aside {
+        width:100%;
+        border:none;
+    }
+
+    .nyhet>h3 {
+        text-align: center;
+    }
+
+    .newsContent {
+        display:block;
+    }
+
+    .hp-more-info-bottom {
+        display:block;
+        padding:0px;
+    }
+
+  }
